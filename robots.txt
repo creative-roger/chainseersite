@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Point this at the production domain before launch.
+Sitemap: https://chainseer.example/sitemap.xml

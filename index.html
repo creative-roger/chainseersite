@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chainseer — Assistant for Solana memecoins</title>
+  <meta name="description" content="Chainseer is a Solana memecoin assistant that screens new coins for you, filters out almost all rugs, and sends only the survivors to Telegram. Read-only. No trading.">
+  <meta name="theme-color" content="#070b14">
+  <link rel="canonical" href="https://chainseer.example/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chainseer">
+  <meta property="og:title" content="Chainseer — Assistant for Solana memecoins">
+  <meta property="og:description" content="A Solana memecoin assistant that screens new launches, filters almost all rugs, and delivers only vetted coins to Telegram. Read-only by design.">
+  <meta property="og:url" content="https://chainseer.example/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Chainseer — Assistant for Solana memecoins">
+  <meta name="twitter:description" content="A Solana memecoin assistant that screens new launches, filters almost all rugs, and delivers only vetted coins to Telegram. Read-only by design.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b1120'/%3E%3Cpath d='M16 4 27 10v12L16 28 5 22V10z' fill='none' stroke='%237c8cff' stroke-width='1.6'/%3E%3Cpath d='M9 16s3-4.5 7-4.5 7 4.5 7 4.5-3 4.5-7 4.5S9 16 9 16Z' fill='none' stroke='%2322d3ee' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='2.2' fill='%23a855f7'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="bg-aura" aria-hidden="true">
+    <span class="aura aura-1"></span>
+    <span class="aura aura-2"></span>
+    <span class="aura aura-3"></span>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Chainseer home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <path d="M16 3.2 27 9.3v12.2L16 28.8 5 22.6V9.3z" fill="none" stroke="#7c8cff" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M9 16s3-4.6 7-4.6 7 4.6 7 4.6-3 4.6-7 4.6S9 16 9 16Z" fill="none" stroke="#22d3ee" stroke-width="1.6"/>
+          <circle cx="16" cy="16" r="2.2" fill="#a855f7"/>
+        </svg>
+        <span class="brand-text">Chainseer</span>
+      </a>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#alerts">Alerts</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-primary btn-sm" data-telegram href="https://t.me/chainseer" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21.6 4.3 2.9 11.5c-.9.3-.9 1.5 0 1.8l4.6 1.5 1.7 5.3c.2.7 1.1.9 1.6.3l2.5-2.6 4.6 3.4c.7.5 1.6.1 1.8-.7l3-14.5c.2-.9-.7-1.6-1.5-1.3z" fill="currentColor"/></svg>
+          Join Telegram
+        </a>
+        <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot-live" aria-hidden="true"></span> Live on Solana</p>
+        <h1>Skip the rugs. <span class="grad-text">Look at fewer, better coins.</span></h1>
+        <p class="lede">
+          Chainseer is a Solana memecoin assistant. It screens new coins around the clock,
+          filters out almost all rugs, and sends only the ones that pass to Telegram so you
+          spend your time on a short, vetted list instead of scrolling every new launch.
+          It makes the work easier; the decisions stay yours.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" data-telegram href="https://t.me/chainseer" target="_blank" rel="noopener">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21.6 4.3 2.9 11.5c-.9.3-.9 1.5 0 1.8l4.6 1.5 1.7 5.3c.2.7 1.1.9 1.6.3l2.5-2.6 4.6 3.4c.7.5 1.6.1 1.8-.7l3-14.5c.2-.9-.7-1.6-1.5-1.3z" fill="currentColor"/></svg>
+            Get alerts on Telegram
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#how">See how it works</a>
+        </div>
+        <p class="hero-note">Read-only · No wallet connection · An assistant, not a guarantee · Not financial advice</p>
+
+        <dl class="stat-strip">
+          <div>
+            <dt>Scan cycle</dt>
+            <dd><span class="count" data-count="15">15</span><span class="unit">s</span></dd>
+          </div>
+          <div>
+            <dt>Safety checks</dt>
+            <dd><span class="count" data-count="12">12</span><span class="unit">+</span></dd>
+          </div>
+          <div>
+            <dt>Pass score</dt>
+            <dd><span class="count" data-count="62">62</span><span class="unit">/100</span></dd>
+          </div>
+          <div>
+            <dt>Trades executed</dt>
+            <dd><span class="count" data-count="0">0</span></dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-visual">
+        <div class="float-chip chip-a" aria-hidden="true">
+          <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8 8 9 4.6-1 8-4 8-9V6l-8-3Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m8.5 12 2.4 2.4 4.6-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Rug filters
+        </div>
+        <div class="float-chip chip-b" aria-hidden="true">
+          <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M12 3v18M5 8v8M19 8v8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          Only survivors
+        </div>
+
+        <article class="alert-card" aria-label="Sample Chainseer Telegram alert">
+          <div class="alert-head">
+            <span class="bot-avatar" aria-hidden="true">C</span>
+            <div class="alert-id">
+              <strong>Chainseer Alerts</strong>
+              <span class="bot-tag">bot</span>
+            </div>
+            <span class="alert-time">just now</span>
+            <span class="sample-pill">Alert</span>
+          </div>
+
+          <div class="alert-body">
+            <p class="alert-title">✅ <b>$ALERT</b> <em>Telegram Alert Protocol</em></p>
+
+            <div class="ca-row">
+              <code id="demo-ca">CHAINSEERdemo1111111111111111111111111111</code>
+              <button class="copy-btn" type="button" data-copy="demo-ca" aria-label="Copy sample contract address">Copy</button>
+            </div>
+
+            <div class="alert-rows" role="group" aria-label="Sample alert metrics">
+              <div class="arow"><span>MC</span><i></i><span>$1.24M</span></div>
+              <div class="arow"><span>Liq</span><i></i><span>$84.2K</span></div>
+              <div class="arow"><span>Holders</span><i></i><span>1,240</span></div>
+              <div class="arow"><span>Mint/Freeze</span><i></i><span>Renounced</span></div>
+              <div class="arow"><span>Honeypot</span><i></i><span>Clear</span></div>
+              <div class="arow"><span>Dev hold</span><i></i><span>3%</span></div>
+              <div class="arow"><span>Age</span><i></i><span>38s</span></div>
+              <div class="arow"><span>Top10</span><i></i><span>21%</span></div>
+            </div>
+
+            <div class="score-row">
+              <span class="score-label">Safety score</span>
+              <span class="score-track"><span class="score-fill" style="--score:87%"></span></span>
+              <strong class="score-value">87</strong>
+            </div>
+
+            <p class="alert-link">View chart &amp; research <span aria-hidden="true">↗</span></p>
+          </div>
+          <p class="sample-note">Illustrative data — not a real token or a recommendation.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Trust bar -->
+    <section class="trust wrap" aria-label="How Chainseer is built">
+      <p class="trust-label">Built to save you time</p>
+      <ul class="trust-list">
+        <li>Read-only data access</li>
+        <li>No custody of funds</li>
+        <li>No wallet connection</li>
+      </ul>
+    </section>
+
+    <!-- How it works -->
+    <section class="section wrap" id="how">
+      <header class="section-head">
+        <p class="eyebrow">The pipeline</p>
+        <h2>From raw trades to a scored alert</h2>
+        <p class="section-sub">
+          Every new coin goes through the same screening pipeline. Each stage can reject it —
+          most launches never reach Telegram, which is the point.
+        </p>
+      </header>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num">01</span>
+          <div class="step-body">
+            <h3>Watch new Solana launches</h3>
+            <p>Continuously picks up fresh Solana memecoins as they appear, so you don't have to sit on a new-pairs page. Read-only; the bot never signs or sends a transaction.</p>
+            <span class="step-meta">scan every 15s</span>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-num">02</span>
+          <div class="step-body">
+            <h3>Check the contract</h3>
+            <p>Mint and freeze authority must be renounced. Honeypot patterns and wash-trading flags are rejected on sight. If contract data is missing, the coin is skipped rather than guessed at.</p>
+            <span class="step-meta">fail-closed</span>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-num">03</span>
+          <div class="step-body">
+            <h3>Inspect who holds it</h3>
+            <p>Top-10 concentration, insider and dev holdings, bundled buys, snipers, and fresh-wallet ratios are measured. Supply that looks stacked against late buyers is filtered out.</p>
+            <span class="step-meta">holder &amp; bundle checks</span>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-num">04</span>
+          <div class="step-body">
+            <h3>Check the deployer</h3>
+            <p>Looks at the dev's launch history and rug ratio. Serial launchers and wallets with a record of abandoned tokens don't make it through.</p>
+            <span class="step-meta">dev history</span>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-num">05</span>
+          <div class="step-body">
+            <h3>Check the market</h3>
+            <p>Minimum market cap, liquidity, holders, and token age, plus checks for tokens still on the bonding curve. Coins too thin or too young to assess are held back.</p>
+            <span class="step-meta">market gates</span>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-num">06</span>
+          <div class="step-body">
+            <h3>Score and deliver</h3>
+            <p>Survivors get a 0–100 safety score. Coins at or above the pass mark arrive in Telegram as a compact card with the contract address, key stats, and security flags. Each token alerts once.</p>
+            <span class="step-meta">Telegram group</span>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Features -->
+    <section class="section wrap" id="features">
+      <header class="section-head">
+        <p class="eyebrow">Why it helps</p>
+        <h2>Built to reject more than it sends</h2>
+        <p class="section-sub">
+          New-coin feeds are mostly rugs, bundles, and wash volume. Chainseer does the first
+          pass for you and throws almost all of it away before it reaches your phone.
+        </p>
+      </header>
+
+      <div class="feature-grid">
+        <article class="feature feature-wide">
+          <span class="feature-icon" aria-hidden="true">⛨</span>
+          <h3>Anti-rug screening, on by default</h3>
+          <p>Renounced authorities, honeypot checks, wash-trading rejection, insider and dev-hold caps, sniper counts, bundler rate, and bonding-curve exclusion all run on every coin. The goal is simple: filter almost all rugs so you don't have to inspect them by hand.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-icon" aria-hidden="true">◷</span>
+          <h3>Less time scrolling</h3>
+          <p>Instead of opening every new launch, you get a short list of coins that already cleared the basics.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-icon" aria-hidden="true">⇄</span>
+          <h3>Fail-closed</h3>
+          <p>If data for a check is missing or unclear, the coin is skipped. Chainseer prefers to miss a coin than to pass a risky one.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-icon" aria-hidden="true">★</span>
+          <h3>Deployer awareness</h3>
+          <p>Dev launch history and rug ratio are checked, so repeat offenders are screened out before you see them.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-icon" aria-hidden="true">◎</span>
+          <h3>One alert per token</h3>
+          <p>No re-alert spam when a coin chops sideways. The alert-once set is persisted in SQLite, so a restart cannot replay old calls.</p>
+        </article>
+        <article class="feature feature-wide">
+          <span class="feature-icon" aria-hidden="true">⟲</span>
+          <h3>Outcome tracking keeps the filter honest</h3>
+          <p>Every alert is recorded with its entry price. Checkpoints at roughly 15 minutes, 1 hour, 6 hours, and 24 hours feed a final review, including whether a coin later collapsed by 70% or more. That shows how well the filters are really working.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Alerts -->
+    <section class="section wrap" id="alerts">
+      <div class="telegram-panel">
+        <div class="tp-copy">
+          <p class="eyebrow"><span class="dot-live" aria-hidden="true"></span> Delivery</p>
+          <h2>Alerts land in Telegram</h2>
+          <p>
+            Every coin that clears the filters is posted to the Chainseer Telegram group as a
+            single, copy-friendly card. No app to install beyond Telegram, no new-pairs page to refresh.
+          </p>
+          <ul class="check-list">
+            <li>Full contract address in a tap-to-copy block</li>
+            <li>Market cap, liquidity, holders, 1h activity</li>
+            <li>Mint, freeze, honeypot, and dev-hold status</li>
+            <li>Top-10, insider, and sniper checks</li>
+            <li>Safety score and a link for your own research</li>
+          </ul>
+          <div class="tp-actions">
+            <a class="btn btn-primary btn-lg" data-telegram href="https://t.me/chainseer" target="_blank" rel="noopener">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21.6 4.3 2.9 11.5c-.9.3-.9 1.5 0 1.8l4.6 1.5 1.7 5.3c.2.7 1.1.9 1.6.3l2.5-2.6 4.6 3.4c.7.5 1.6.1 1.8-.7l3-14.5c.2-.9-.7-1.6-1.5-1.3z" fill="currentColor"/></svg>
+              Open Telegram alerts
+            </a>
+            <span class="tp-note">Private group? Use the invite link provided by the operator.</span>
+          </div>
+        </div>
+
+        <div class="tp-aside" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-top">
+              <span class="phone-avatar">C</span>
+              <div>
+                <strong>Chainseer Alerts</strong>
+                <small>screened alert</small>
+              </div>
+            </div>
+            <div class="phone-msg">
+              <p>✅ <b>$SAMPLE</b></p>
+              <p class="phone-ca">CHAINSEER…1111</p>
+              <p class="phone-line"><span>Safety</span><b>87</b></p>
+              <p class="phone-line"><span>Mint/Freeze</span><b>Renounced</b></p>
+              <p class="phone-line"><span>Top10</span><b>21%</b></p>
+            </div>
+            <div class="phone-cta">View chart ↗</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profiler / outcomes -->
+    <section class="section wrap" id="track-record">
+      <header class="section-head">
+        <p class="eyebrow">Accountability</p>
+        <h2>The filter keeps score on itself</h2>
+        <p class="section-sub">
+          Chainseer records what happened after each alert, so you can see how well the
+          rug filters are actually working instead of taking it on trust.
+        </p>
+      </header>
+
+      <div class="loop">
+        <article class="loop-card">
+          <span class="loop-step">A</span>
+          <h3>Screen</h3>
+          <p>New coins run through the contract, holder, deployer, and market checks.</p>
+        </article>
+        <article class="loop-card">
+          <span class="loop-step">B</span>
+          <h3>Alert</h3>
+          <p>Only coins that pass are posted, with entry price and the checks they cleared stored in SQLite.</p>
+        </article>
+        <article class="loop-card">
+          <span class="loop-step">C</span>
+          <h3>Track</h3>
+          <p>Price checkpoints at ~15m, 1h, 6h, and 24h show how each alert behaved after it was sent.</p>
+        </article>
+        <article class="loop-card">
+          <span class="loop-step">D</span>
+          <h3>Review</h3>
+          <p>Final max gain and drawdown flag alerts that later collapsed, so thresholds can be tightened where needed.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section wrap" id="faq">
+      <header class="section-head">
+        <p class="eyebrow">Questions</p>
+        <h2>Before you join</h2>
+      </header>
+
+      <div class="faq">
+        <details>
+          <summary>Does Chainseer trade for me?</summary>
+          <p>No. The bot only reads public market and on-chain data and never connects to a wallet, holds funds, signs transactions, or places orders. Every decision after an alert is yours.</p>
+        </details>
+        <details>
+          <summary>Is this financial advice?</summary>
+          <p>No. Chainseer publishes informational signals about on-chain activity. It does not know your circumstances, it cannot predict price, and a high score is not a recommendation to buy.</p>
+        </details>
+        <details>
+          <summary>Which chain and data sources?</summary>
+          <p>Solana only. Chainseer reads public token, holder, and security data from third-party market data providers and on-chain sources. It is an independent project and is not affiliated with Telegram or Solana.</p>
+        </details>
+        <details>
+          <summary>How fast is an alert?</summary>
+          <p>New coins are scanned every 15 seconds. Delivery depends on data-provider response time, rate limits, and Telegram — so treat timing as best-effort, not guaranteed.</p>
+        </details>
+        <details>
+          <summary>Why do some tokens alert only once?</summary>
+          <p>Alert-once is enabled by default and persisted in the database. It prevents repeat calls on the same token, even across bot restarts. Operators can change the cooldown behaviour through configuration.</p>
+        </details>
+        <details>
+          <summary>Does a passing coin mean it's safe?</summary>
+          <p>No. Chainseer filters out almost all rugs, but no filter catches everything. A pass means a coin cleared the checks, not that it is safe or will go up. Treat each alert as a shortlist and do your own research.</p>
+        </details>
+        <details>
+          <summary>What does the score mean?</summary>
+          <p>It is a 0–100 ranking of how cleanly a coin cleared the contract, holder, market, and deployer checks. It is a filter, not a probability of profit.</p>
+        </details>
+        <details>
+          <summary>Do I need a wallet or an API key?</summary>
+          <p>No. Followers only need Telegram. Any data-provider API keys are configured by the operator running the bot.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section wrap">
+      <div class="final-cta">
+        <p class="eyebrow">The scanner is running</p>
+        <h2>Stop scrolling new coins. Get the shortlist.</h2>
+        <p>Join the Telegram group and see each coin that clears the filters.</p>
+        <a class="btn btn-primary btn-lg" data-telegram href="https://t.me/chainseer" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21.6 4.3 2.9 11.5c-.9.3-.9 1.5 0 1.8l4.6 1.5 1.7 5.3c.2.7 1.1.9 1.6.3l2.5-2.6 4.6 3.4c.7.5 1.6.1 1.8-.7l3-14.5c.2-.9-.7-1.6-1.5-1.3z" fill="currentColor"/></svg>
+          Join Chainseer on Telegram
+        </a>
+        <p class="final-note">By joining you agree to the <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a>.</p>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="risk-banner" role="note">
+        <strong>High risk.</strong> Memecoins are extremely volatile and can lose all value within
+        minutes. Screening can miss things, and on-chain data can be incomplete, delayed, or manipulated. Chainseer alerts are
+        informational only and are not financial, investment, or trading advice. Always do your own
+        research. Read the <a href="risk.html">full risk disclosure</a>.
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Chainseer home">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <path d="M16 3.2 27 9.3v12.2L16 28.8 5 22.6V9.3z" fill="none" stroke="#7c8cff" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M9 16s3-4.6 7-4.6 7 4.6 7 4.6-3 4.6-7 4.6S9 16 9 16Z" fill="none" stroke="#22d3ee" stroke-width="1.6"/>
+            <circle cx="16" cy="16" r="2.2" fill="#a855f7"/>
+          </svg>
+          <span class="brand-text">Chainseer</span>
+        </a>
+        <p>Rug-filtered coin alerts for Solana. Read-only by design.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <div>
+          <h2>Product</h2>
+          <a href="#how">How it works</a>
+          <a href="#alerts">Telegram alerts</a>
+        </div>
+        <div>
+          <h2>Legal</h2>
+          <a href="terms.html">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="risk.html">Risk Disclosure</a>
+        </div>
+        <div>
+          <h2>Community</h2>
+          <a data-telegram href="https://t.me/chainseer" target="_blank" rel="noopener">Telegram alerts</a>
+          <a href="mailto:contact@chainseer.example">Contact</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="wrap footer-bottom">
+      <p>© <span id="year">2026</span> Chainseer. All rights reserved. Core software licensed under MIT.</p>
+      <p>Not financial advice.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js" defer></script>
+</body>
+</html>
