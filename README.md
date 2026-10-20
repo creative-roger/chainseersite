@@ -36,7 +36,7 @@ disk (`file://`), though a local server is closer to production.
    (`https://t.me/+...`).
 2. **Domain.** Replace `https://chainseer.example` in the canonical tag, Open
    Graph tags, `robots.txt`, and `sitemap.xml`. Update `lastmod` when you do.
-3. **Legal placeholders.** Replace `[Operator name]`, `contact@chainseer.example`,
+3. **Legal placeholders.** Replace `[Operator name]`, `dev.chainseer@gmail.com`,
    `[governing jurisdiction]`, `[venue]`, and `[postal address, if required in
    your jurisdiction]`. Have a qualified lawyer review the three legal pages
    for your jurisdiction. They are a solid starting point, not legal advice.
