@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404: not found — Chainseer</title>
+  <meta name="description" content="This address didn't get through screening. Head back to Chainseer.">
+  <meta name="robots" content="noindex,follow">
+  <meta name="theme-color" content="#f4f5f2">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23131712'/%3E%3Cpath d='M6 13.5h20' stroke='%23f4f5f2' stroke-opacity='.5' stroke-width='1.6'/%3E%3Cpath d='m10 21 4 4 9-10' fill='none' stroke='%233fbf88' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/switzer-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/switzer-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/switzer-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    document.documentElement.classList.add("js");
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("motion");
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="curtain" aria-hidden="true"><div class="curtain__panel"></div><div class="curtain__gate"></div></div>
+
+  <div id="page">
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html" aria-label="Chainseer home">
+          <svg class="brand-mark" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+            <rect x="1" y="1" width="26" height="26" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M6 11.5h16" stroke="currentColor" stroke-opacity="0.45" stroke-width="1.4"/>
+            <path d="m9.5 19.5 3.5 3.5 8-9" fill="none" stroke="#0e7b4f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Chainseer
+        </a>
+        <div class="header-cta">
+          <a class="plate plate-sm plate-ghost" href="index.html">Back to site</a>
+          <a class="plate plate-sm" data-telegram href="https://t.me/chainseer" target="_blank" rel="noopener">Telegram alerts</a>
+        </div>
+        <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main" class="p404" tabindex="-1">
+      <div class="p404-main">
+        <p class="stamp stamp-reject">reject · no such address</p>
+        <h1 class="display">This page didn't get through.</h1>
+        <p class="lede">The address you asked for isn't on the site. It was never screened in, or it has been retired. Everything else is where it was.</p>
+        <div class="p404-cta">
+          <a class="plate plate-lg" href="index.html">Back to Chainseer <span class="arr" aria-hidden="true">→</span></a>
+          <a class="tlink" href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="p404-foot">
+        <span>error 404 · screened and rejected</span>
+        <span>read-only · not financial advice</span>
+      </div>
+    </main>
+  </div>
+
+  <nav id="menu" class="menu" aria-label="Menu">
+    <a href="index.html">Home</a>
+    <a href="index.html#how">The screen</a>
+    <a href="index.html#alerts">Alerts</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="risk.html">Risk</a>
+    <div class="menu-legal">
+      <span>read-only</span>
+      <span>no wallet</span>
+      <span>not financial advice</span>
+    </div>
+  </nav>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/vendor/SplitText.min.js"></script>
+  <script src="assets/vendor/lenis.min.js"></script>
+  <script src="main.js" defer></script>
+</body>
+</html>

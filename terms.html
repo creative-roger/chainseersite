@@ -4,213 +4,256 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Terms of Service — Chainseer</title>
-  <meta name="description" content="The terms that govern your use of the Chainseer website and Telegram alert service.">
-  <meta name="theme-color" content="#070b14">
+  <meta name="description" content="The terms that govern your use of the Chainseer website and the Telegram alert service.">
+  <meta name="theme-color" content="#f4f5f2">
   <link rel="canonical" href="https://chainseer.example/terms.html">
   <meta name="robots" content="index,follow">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b1120'/%3E%3Cpath d='M16 4 27 10v12L16 28 5 22V10z' fill='none' stroke='%237c8cff' stroke-width='1.6'/%3E%3Cpath d='M9 16s3-4.5 7-4.5 7 4.5 7 4.5-3 4.5-7 4.5S9 16 9 16Z' fill='none' stroke='%2322d3ee' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='2.2' fill='%23a855f7'/%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chainseer">
+  <meta property="og:title" content="Terms of Service — Chainseer">
+  <meta property="og:description" content="The terms that govern your use of the Chainseer website and the Telegram alert service.">
+  <meta property="og:url" content="https://chainseer.example/terms.html">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://chainseer.example/assets/og.png">
+  <meta property="og:image:alt" content="Chainseer headline poster: Almost nothing gets through.">
+  <meta name="twitter:image" content="https://chainseer.example/assets/og.png">
+  <meta name="twitter:title" content="Terms of Service — Chainseer">
+  <meta name="twitter:description" content="The terms that govern your use of the Chainseer website and the Telegram alert service.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23131712'/%3E%3Cpath d='M6 13.5h20' stroke='%23f4f5f2' stroke-opacity='.5' stroke-width='1.6'/%3E%3Cpath d='m10 21 4 4 9-10' fill='none' stroke='%233fbf88' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/switzer-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/switzer-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/switzer-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/fonts.css">
   <link rel="stylesheet" href="styles.css">
+  <script>
+    document.documentElement.classList.add("js");
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("motion");
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="bg-aura" aria-hidden="true"><span class="aura aura-1"></span><span class="aura aura-2"></span></div>
+  <div id="curtain" aria-hidden="true"><div class="curtain__panel"></div><div class="curtain__gate"></div></div>
 
-  <header class="site-header" id="top">
-    <div class="wrap header-inner">
-      <a class="brand" href="index.html" aria-label="Chainseer home">
-        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-          <path d="M16 3.2 27 9.3v12.2L16 28.8 5 22.6V9.3z" fill="none" stroke="#7c8cff" stroke-width="1.6" stroke-linejoin="round"/>
-          <path d="M9 16s3-4.6 7-4.6 7 4.6 7 4.6-3 4.6-7 4.6S9 16 9 16Z" fill="none" stroke="#22d3ee" stroke-width="1.6"/>
-          <circle cx="16" cy="16" r="2.2" fill="#a855f7"/>
-        </svg>
-        <span class="brand-text">Chainseer</span>
-      </a>
-      <div class="header-actions">
-        <a class="btn btn-ghost btn-sm" href="index.html">Back to site</a>
-        <a class="btn btn-primary btn-sm" data-telegram href="https://t.me/chainseer" target="_blank" rel="noopener">Telegram alerts</a>
-      </div>
-    </div>
-  </header>
-
-  <main id="main">
-    <div class="wrap legal-hero">
-      <p class="eyebrow">Legal</p>
-      <h1>Terms of Service</h1>
-      <p class="lede">These terms govern your access to the Chainseer website and to the alert service delivered through Telegram. Please read them before you use either.</p>
-      <p class="legal-meta">
-        <span><strong>Last updated:</strong> 20 October 2026</span>
-        <span><strong>Effective:</strong> 20 October 2026</span>
-        <span><strong>Version:</strong> 1.0</span>
-      </p>
-    </div>
-
-    <div class="wrap legal-layout">
-      <aside class="legal-toc" aria-label="On this page">
-        <h2>On this page</h2>
-        <nav>
-          <a href="#acceptance">1. Acceptance</a>
-          <a href="#service">2. The service</a>
-          <a href="#not-advice">3. Not financial advice</a>
-          <a href="#eligibility">4. Eligibility</a>
-          <a href="#telegram">5. Telegram delivery</a>
-          <a href="#use">6. Acceptable use</a>
-          <a href="#data">7. Data and privacy</a>
-          <a href="#ip">8. Intellectual property</a>
-          <a href="#availability">9. Availability and changes</a>
-          <a href="#disclaimers">10. Disclaimers</a>
-          <a href="#liability">11. Limitation of liability</a>
-          <a href="#indemnity">12. Indemnity</a>
-          <a href="#third-party">13. Third-party services</a>
-          <a href="#termination">14. Suspension and termination</a>
-          <a href="#law">15. Governing law</a>
-          <a href="#changes">16. Changes to these terms</a>
-          <a href="#contact">17. Contact</a>
-        </nav>
-      </aside>
-
-      <article class="legal-body">
-        <div class="legal-card warn">
-          <p><strong>Plain-language summary.</strong> Chainseer publishes informational alerts about on-chain activity. It does not trade for you, hold your funds, or tell you what to buy. Signals can be wrong, late, or missing. You are responsible for every decision you make. This summary is not a substitute for the terms below.</p>
+  <div id="page">
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html" aria-label="Chainseer home">
+          <svg class="brand-mark" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+            <rect x="1" y="1" width="26" height="26" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M6 11.5h16" stroke="currentColor" stroke-opacity="0.45" stroke-width="1.4"/>
+            <path d="m9.5 19.5 3.5 3.5 8-9" fill="none" stroke="#0e7b4f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Chainseer
+        </a>
+        <div class="header-cta">
+          <a class="plate plate-sm plate-ghost" href="index.html">Back to site</a>
+          <a class="plate plate-sm" data-telegram href="https://t.me/chainseer" target="_blank" rel="noopener">Telegram alerts</a>
         </div>
+        <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
 
-        <section id="acceptance">
-          <h2>1. Acceptance of these terms</h2>
-          <p>These Terms of Service (“Terms”) form a binding agreement between you and Chainseer, an independent project operated by <strong>Rogers</strong> (“Chainseer”, “we”, “us”, “our”), governing your use of the Chainseer website (the “Site”) and the alert service we operate through Telegram (the “Service”).</p>
-          <p>By accessing the Site, joining the Telegram group, or interacting with the Chainseer bot, you confirm that you have read, understood, and agree to these Terms and to our <a href="privacy.html">Privacy Policy</a>. If you do not agree, do not use the Site or the Service.</p>
-          <p>If you use the Service on behalf of an organisation, you represent that you have authority to bind that organisation, and “you” includes that organisation.</p>
-        </section>
+    <main id="main" tabindex="-1">
+      <div class="wrap legal-hero">
+        <p class="gate-mark">Legal</p>
+        <h1 class="display">Terms of Service</h1>
+        <p class="lede">These terms govern your access to the Chainseer website and to the alert service delivered through Telegram. Please read them before you use either.</p>
+        <p class="legal-meta">
+          <span><strong>Last updated:</strong> 20 October 2026</span>
+          <span><strong>Effective:</strong> 20 October 2026</span>
+          <span><strong>Version:</strong> 1.0</span>
+        </p>
+      </div>
 
-        <section id="service">
-          <h2>2. What the Service is</h2>
-          <p>Chainseer monitors publicly available data on new Solana tokens, applies contract, holder, deployer, and market filters designed to screen out most rug pulls, computes a safety score, and publishes the coins that pass to a Telegram group. The Service is informational and read-only.</p>
-          <p>Chainseer does <strong>not</strong>:</p>
-          <ul>
-            <li>execute, route, or manage trades or orders;</li>
-            <li>connect to your wallet, hold funds, or take custody of any asset;</li>
-            <li>provide brokerage, exchange, custody, portfolio-management, or investment-advisory services;</li>
-            <li>guarantee that any alert is accurate, complete, timely, or profitable.</li>
-          </ul>
-          <p>Alerts are generated by automated rules and heuristics. They reflect observed on-chain activity at a point in time, not an assessment of your circumstances or a prediction of future price.</p>
-        </section>
+      <div class="wrap legal-layout">
+        <aside class="legal-toc" aria-label="On this page">
+          <h2>On this page</h2>
+          <nav>
+            <a href="#acceptance">1. Acceptance</a>
+            <a href="#service">2. The service</a>
+            <a href="#not-advice">3. Not financial advice</a>
+            <a href="#eligibility">4. Eligibility</a>
+            <a href="#telegram">5. Telegram delivery</a>
+            <a href="#use">6. Acceptable use</a>
+            <a href="#data">7. Data and privacy</a>
+            <a href="#ip">8. Intellectual property</a>
+            <a href="#availability">9. Availability</a>
+            <a href="#disclaimers">10. Disclaimers</a>
+            <a href="#liability">11. Limitation of liability</a>
+            <a href="#indemnity">12. Indemnity</a>
+            <a href="#third-party">13. Third-party services</a>
+            <a href="#termination">14. Suspension and termination</a>
+            <a href="#law">15. Governing law</a>
+            <a href="#changes">16. Changes to these terms</a>
+            <a href="#contact">17. Contact</a>
+          </nav>
+        </aside>
 
-        <section id="not-advice">
-          <h2>3. No financial, investment, or legal advice</h2>
-          <p>Nothing on the Site or in the Service constitutes financial, investment, trading, tax, accounting, or legal advice, a recommendation, a solicitation, or an offer to buy or sell any token or other asset. A score is a ranking of how a token performed on automated checks — not a probability of profit, not a guarantee of safety, and not an endorsement.</p>
-          <p>Chainseer does not know your financial situation, experience, or risk tolerance. You should consult a qualified professional where appropriate and make your own independent decision. See the <a href="risk.html">Risk Disclosure</a> for the specific risks of memecoin trading.</p>
-        </section>
-
-        <section id="eligibility">
-          <h2>4. Eligibility</h2>
-          <p>You must be at least 18 years old and legally capable of entering into a binding contract to use the Service. You must not be barred from using the Service under the laws of your jurisdiction, and you must not be subject to sanctions or located in a jurisdiction where access to the Service would be unlawful.</p>
-          <p>You are responsible for ensuring that your use of Telegram and of any third-party trading platform complies with the laws that apply to you.</p>
-        </section>
-
-        <section id="telegram">
-          <h2>5. Telegram delivery and group rules</h2>
-          <p>The Service is delivered through Telegram, a third-party messaging platform. Alerts may be delayed, filtered, reordered, duplicated, or never delivered because of Telegram outages, rate limits, device settings, notification settings, network conditions, or changes to Telegram’s platform.</p>
-          <p>We do not control Telegram and are not responsible for its availability, security, or handling of your data. Your use of Telegram is governed by Telegram’s own terms and privacy policy.</p>
-          <p>Additional group rules may be published in the Telegram group. By joining, you agree to follow them. We may remove any participant who abuses the group, spams, harasses others, or attempts to impersonate Chainseer or its operators.</p>
-          <p>Beware of impersonation. Chainseer will never ask for your seed phrase, private keys, wallet credentials, or a wallet connection. Any message doing so is not from us.</p>
-        </section>
-
-        <section id="use">
-          <h2>6. Acceptable use</h2>
-          <p>You agree not to:</p>
-          <ul>
-            <li>use the Site or Service in breach of any applicable law or regulation;</li>
-            <li>scrape, crawl, or systematically extract content from the Site or group except as permitted by law or with our written consent;</li>
-            <li>spam, flood, or automate messages in the Telegram group;</li>
-            <li>impersonate Chainseer, its operators, or other participants;</li>
-            <li>attempt to disrupt, overload, or gain unauthorised access to the Site, bot, database, or infrastructure;</li>
-            <li>resell, rebrand, or present the alerts as your own service without permission;</li>
-            <li>use the Service to manipulate a token, coordinate wash trading, or engage in any fraudulent or abusive scheme;</li>
-            <li>use the Service to harass, threaten, or harm another person.</li>
-          </ul>
-          <p>The Chainseer software is separately licensed under the MIT License. These Terms do not restrict rights you receive under that licence for the software itself; they govern your use of our Site, brand, and hosted Service.</p>
-        </section>
-
-        <section id="data">
-          <h2>7. Data and privacy</h2>
-          <p>Our <a href="privacy.html">Privacy Policy</a> explains what data we process when you visit the Site or interact with the bot, why we process it, and the rights you may have. It forms part of these Terms.</p>
-        </section>
-
-        <section id="ip">
-          <h2>8. Intellectual property</h2>
-          <p>The Site’s design, text, graphics, and the Chainseer name and logo are owned by the Operator or used with permission and are protected by intellectual-property laws. You may view and share links to the Site, and quote short excerpts with attribution, but you may not copy or redistribute the Site’s content or branding in a way that suggests endorsement or affiliation.</p>
-          <p>The Chainseer bot and its core source code are released under the MIT License. Third-party names, logos, and data — including Telegram and Solana — belong to their respective owners. Chainseer is not affiliated with, endorsed by, or sponsored by any of them.</p>
-        </section>
-
-        <section id="availability">
-          <h2>9. Availability, changes, and no service-level commitment</h2>
-          <p>The Service is provided on an “as available” basis. We may modify, suspend, restrict, or discontinue any part of the Site or Service at any time, including changing thresholds, supported chains, or the Telegram destination, without prior notice and without liability.</p>
-          <p>We do not commit to any uptime, latency, delivery rate, or number of alerts. The bot may be offline for maintenance, rate-limited by data providers, or unable to reach Telegram. You should never rely on an alert as your only source of information or as a trigger that requires immediate action.</p>
-        </section>
-
-        <section id="disclaimers">
-          <h2>10. Disclaimers</h2>
-          <p>To the maximum extent permitted by law, the Site and Service are provided <strong>“as is” and “as available”</strong>, without warranties of any kind, whether express, implied, or statutory, including implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement.</p>
-          <p>We do not warrant that the Service will be uninterrupted, secure, error-free, or free of harmful components; that data from third-party providers or other sources is accurate, complete, or current; that defects will be corrected; or that any alert will produce a particular outcome.</p>
-          <p>Some jurisdictions do not allow the exclusion of certain warranties, so parts of this section may not apply to you. Nothing in these Terms excludes or limits any right you have under mandatory consumer-protection law.</p>
-        </section>
-
-        <section id="liability">
-          <h2>11. Limitation of liability</h2>
-          <p>To the maximum extent permitted by law, the Operator, its contributors, and its service providers will not be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages, or for any loss of profits, revenue, data, goodwill, tokens, or digital assets, arising out of or relating to your use of, or inability to use, the Site or Service — even if advised of the possibility of such damages.</p>
-          <p>This includes losses resulting from trading decisions, price movements, rug pulls, smart-contract exploits, missed or delayed alerts, inaccurate data, or third-party platform failures.</p>
-          <p>Where liability cannot lawfully be excluded, our aggregate liability arising out of or relating to the Site and Service will not exceed the greater of (a) the amount you paid us for the Service in the twelve months before the claim, or (b) USD 100.</p>
-        </section>
-
-        <section id="indemnity">
-          <h2>12. Indemnity</h2>
-          <p>To the extent permitted by law, you agree to indemnify and hold harmless the Operator, its contributors, and its service providers from any claims, damages, losses, liabilities, and reasonable expenses (including legal fees) arising from your breach of these Terms, your misuse of the Site or Service, or your violation of any law or third-party right.</p>
-        </section>
-
-        <section id="third-party">
-          <h2>13. Third-party services and links</h2>
-          <p>The Site and alerts may link to third-party platforms such as charting sites, Solana explorers, or trading interfaces. Those links are provided for convenience. We do not control and are not responsible for third-party content, terms, privacy practices, security, or availability. Following a link is at your own risk.</p>
-          <p>On-chain data is public, but it can be incomplete, delayed, mislabelled, or deliberately manipulated. Labels and flags supplied by data providers reflect their own classification, not a guarantee of safety or intent.</p>
-        </section>
-
-        <section id="termination">
-          <h2>14. Suspension and termination</h2>
-          <p>We may suspend or terminate your access to the Site or the Telegram group at any time if we reasonably believe you have breached these Terms, created risk for other users, or acted unlawfully. You may stop using the Service at any time by leaving the Telegram group.</p>
-          <p>Sections that by their nature should survive termination — including intellectual property, disclaimers, limitation of liability, indemnity, and governing law — will continue to apply.</p>
-        </section>
-
-        <section id="law">
-          <h2>15. Governing law and disputes</h2>
-          <p>These Terms are governed by the laws of <strong>[governing jurisdiction]</strong>, without regard to conflict-of-law rules. Subject to any mandatory rights you have as a consumer, the courts of <strong>[venue]</strong> will have exclusive jurisdiction over any dispute arising out of or relating to these Terms or the Service.</p>
-          <p>Before starting formal proceedings, you agree to contact us at <strong>dev.chainseer@gmail.com</strong> and allow a reasonable opportunity to resolve the issue informally.</p>
-        </section>
-
-        <section id="changes">
-          <h2>16. Changes to these Terms</h2>
-          <p>We may update these Terms from time to time. The “Last updated” date at the top of this page reflects the latest version. Material changes will be announced on the Site or in the Telegram group where reasonably practicable. Continued use of the Site or Service after an update means you accept the revised Terms.</p>
-          <p>If any provision is found unenforceable, it will be limited to the minimum extent necessary and the remaining provisions will stay in effect. Our failure to enforce a provision is not a waiver. These Terms, together with the Privacy Policy and Risk Disclosure, are the entire agreement between you and us regarding the Site and Service.</p>
-        </section>
-
-        <section id="contact">
-          <h2>17. Contact</h2>
-          <div class="legal-card callout">
-            <p><strong>Operator:</strong> Rogers<br>
-            <strong>Email:</strong> <a href="mailto:dev.chainseer@gmail.com">dev.chainseer@gmail.com</a><br>
-            <strong>Telegram:</strong> <a data-telegram href="https://t.me/chainseer" target="_blank" rel="noopener">Chainseer alerts group</a></p>
+        <article class="legal-body">
+          <div class="legal-card warn">
+            <p><strong>Plain-language summary.</strong> Chainseer publishes informational alerts about on-chain activity. It does not trade for you, hold your funds, or tell you what to buy. Signals can be wrong, late, or missing. You are responsible for every decision you make. This summary is not a substitute for the terms below.</p>
           </div>
-          <p>Please include “Legal” in the subject line of any formal notice so it can be routed correctly.</p>
-          <p class="back"><a href="index.html">← Back to Chainseer</a></p>
-        </section>
-      </article>
-    </div>
-  </main>
 
-  <footer class="site-footer">
-    <div class="wrap footer-bottom">
-      <p>© <span id="year">2026</span> Chainseer. Not financial advice.</p>
-      <p><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="risk.html">Risk</a> · <a data-telegram href="https://t.me/chainseer" target="_blank" rel="noopener">Telegram</a></p>
+          <section id="acceptance">
+            <h2>1. Acceptance of these terms</h2>
+            <p>These Terms of Service (“Terms”) form a binding agreement between you and Chainseer, an independent project operated by <strong>voidstudiodesk</strong> (“Chainseer”, “we”, “us”, “our”), governing your use of the Chainseer website (the “Site”) and the alert service we operate through Telegram (the “Service”).</p>
+            <p>By accessing the Site, joining the Telegram group, or interacting with the Chainseer bot, you confirm that you have read, understood, and agree to these Terms and to our <a href="privacy.html">Privacy Policy</a>. If you do not agree, do not use the Site or the Service.</p>
+            <p>If you use the Service on behalf of an organisation, you represent that you have authority to bind that organisation, and “you” includes that organisation.</p>
+          </section>
+
+          <section id="service">
+            <h2>2. What the Service is</h2>
+            <p>Chainseer monitors publicly available data on new Solana tokens, applies contract, holder, deployer, and market filters designed to screen out most rug pulls, computes a safety score, and publishes the coins that pass to a Telegram group. The Service is informational and read-only.</p>
+            <p>Chainseer does <strong>not</strong>:</p>
+            <ul>
+              <li>execute, route, or manage trades or orders;</li>
+              <li>connect to your wallet, hold funds, or take custody of any asset;</li>
+              <li>provide brokerage, exchange, custody, portfolio-management, or investment-advisory services;</li>
+              <li>guarantee that any alert is accurate, complete, timely, or profitable.</li>
+            </ul>
+            <p>Alerts are generated by automated rules and heuristics. They reflect observed on-chain activity at a point in time, not an assessment of your circumstances or a prediction of future price.</p>
+          </section>
+
+          <section id="not-advice">
+            <h2>3. No financial, investment, or legal advice</h2>
+            <p>Nothing on the Site or in the Service constitutes financial, investment, trading, tax, accounting, or legal advice, a recommendation, a solicitation, or an offer to buy or sell any token or other asset. A score is a ranking of how a token performed on automated checks — not a probability of profit, not a guarantee of safety, and not an endorsement.</p>
+            <p>Chainseer does not know your financial situation, experience, or risk tolerance. You should consult a qualified professional where appropriate and make your own independent decision. See the <a href="risk.html">Risk Disclosure</a> for the specific risks of memecoin trading.</p>
+          </section>
+
+          <section id="eligibility">
+            <h2>4. Eligibility</h2>
+            <p>You must be at least 18 years old and legally capable of entering into a binding contract to use the Service. You must not be barred from using the Service under the laws of your jurisdiction, and you must not be subject to sanctions or located in a jurisdiction where access to the Service would be unlawful.</p>
+            <p>You are responsible for ensuring that your use of Telegram and of any third-party trading platform complies with the laws that apply to you.</p>
+          </section>
+
+          <section id="telegram">
+            <h2>5. Telegram delivery and group rules</h2>
+            <p>The Service is delivered through Telegram, a third-party messaging platform. Alerts may be delayed, filtered, reordered, duplicated, or never delivered because of Telegram outages, rate limits, device settings, notification settings, network conditions, or changes to Telegram’s platform.</p>
+            <p>We do not control Telegram and are not responsible for its availability, security, or handling of your data. Your use of Telegram is governed by Telegram’s own terms and privacy policy.</p>
+            <p>Additional group rules may be published in the Telegram group. By joining, you agree to follow them. We may remove any participant who abuses the group, spams, harasses others, or attempts to impersonate Chainseer or its operators.</p>
+            <p>Beware of impersonation. Chainseer will never ask for your seed phrase, private keys, wallet credentials, or a wallet connection. Any message doing so is not from us.</p>
+          </section>
+
+          <section id="use">
+            <h2>6. Acceptable use</h2>
+            <p>You agree not to:</p>
+            <ul>
+              <li>use the Site or Service in breach of any applicable law or regulation;</li>
+              <li>scrape, crawl, or systematically extract content from the Site or group except as permitted by law or with our written consent;</li>
+              <li>spam, flood, or automate messages in the Telegram group;</li>
+              <li>impersonate Chainseer, its operators, or other participants;</li>
+              <li>attempt to disrupt, overload, or gain unauthorised access to the Site, bot, database, or infrastructure;</li>
+              <li>resell, rebrand, or present the alerts as your own service without permission;</li>
+              <li>use the Service to manipulate a token, coordinate wash trading, or engage in any fraudulent or abusive scheme;</li>
+              <li>use the Service to harass, threaten, or harm another person.</li>
+            </ul>
+            <p>The Chainseer software is separately licensed under the MIT License. These Terms do not restrict rights you receive under that licence for the software itself; they govern your use of our Site, brand, and hosted Service.</p>
+          </section>
+
+          <section id="data">
+            <h2>7. Data and privacy</h2>
+            <p>Our <a href="privacy.html">Privacy Policy</a> explains what data we process when you visit the Site or interact with the bot, why we process it, and the rights you may have. It forms part of these Terms.</p>
+          </section>
+
+          <section id="ip">
+            <h2>8. Intellectual property</h2>
+            <p>The Site’s design, text, graphics, and the Chainseer name and logo are owned by the Operator or used with permission and are protected by intellectual-property laws. You may view and share links to the Site, and quote short excerpts with attribution, but you may not copy or redistribute the Site’s content or branding in a way that suggests endorsement or affiliation.</p>
+            <p>The Chainseer bot and its core source code are released under the MIT License. Third-party names, logos, and data — including Telegram and Solana — belong to their respective owners. Chainseer is not affiliated with, endorsed by, or sponsored by any of them.</p>
+          </section>
+
+          <section id="availability">
+            <h2>9. Availability, changes, and no service-level commitment</h2>
+            <p>The Service is provided on an “as available” basis. We may modify, suspend, restrict, or discontinue any part of the Site or Service at any time, including changing thresholds, supported chains, or the Telegram destination, without prior notice and without liability.</p>
+            <p>We do not commit to any uptime, latency, delivery rate, or number of alerts. The bot may be offline for maintenance, rate-limited by data providers, or unable to reach Telegram. You should never rely on an alert as your only source of information or as a trigger that requires immediate action.</p>
+          </section>
+
+          <section id="disclaimers">
+            <h2>10. Disclaimers</h2>
+            <p>To the maximum extent permitted by law, the Site and Service are provided <strong>“as is” and “as available”</strong>, without warranties of any kind, whether express, implied, or statutory, including implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement.</p>
+            <p>We do not warrant that the Service will be uninterrupted, secure, error-free, or free of harmful components; that data from third-party providers or other sources is accurate, complete, or current; that defects will be corrected; or that any alert will produce a particular outcome.</p>
+            <p>Some jurisdictions do not allow the exclusion of certain warranties, so parts of this section may not apply to you. Nothing in these Terms excludes or limits any right you have under mandatory consumer-protection law.</p>
+          </section>
+
+          <section id="liability">
+            <h2>11. Limitation of liability</h2>
+            <p>To the maximum extent permitted by law, the Operator, its contributors, and its service providers will not be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages, or for any loss of profits, revenue, data, goodwill, tokens, or digital assets, arising out of or relating to your use of, or inability to use, the Site or Service — even if advised of the possibility of such damages.</p>
+            <p>This includes losses resulting from trading decisions, price movements, rug pulls, smart-contract exploits, missed or delayed alerts, inaccurate data, or third-party platform failures.</p>
+            <p>Where liability cannot lawfully be excluded, our aggregate liability arising out of or relating to the Site and Service will not exceed the greater of (a) the amount you paid us for the Service in the twelve months before the claim, or (b) USD 100.</p>
+          </section>
+
+          <section id="indemnity">
+            <h2>12. Indemnity</h2>
+            <p>To the extent permitted by law, you agree to indemnify and hold harmless the Operator, its contributors, and its service providers from any claims, damages, losses, liabilities, and reasonable expenses (including legal fees) arising from your breach of these Terms, your misuse of the Site or Service, or your violation of any law or third-party right.</p>
+          </section>
+
+          <section id="third-party">
+            <h2>13. Third-party services and links</h2>
+            <p>The Site and alerts may link to third-party platforms such as charting sites, Solana explorers, or trading interfaces. Those links are provided for convenience. We do not control and are not responsible for third-party content, terms, privacy practices, security, or availability. Following a link is at your own risk.</p>
+            <p>On-chain data is public, but it can be incomplete, delayed, mislabelled, or deliberately manipulated. Labels and flags supplied by data providers reflect their own classification, not a guarantee of safety or intent.</p>
+          </section>
+
+          <section id="termination">
+            <h2>14. Suspension and termination</h2>
+            <p>We may suspend or terminate your access to the Site or the Telegram group at any time if we reasonably believe you have breached these Terms, created risk for other users, or acted unlawfully. You may stop using the Service at any time by leaving the Telegram group.</p>
+            <p>Sections that by their nature should survive termination — including intellectual property, disclaimers, limitation of liability, indemnity, and governing law — will continue to apply.</p>
+          </section>
+
+          <section id="law">
+            <h2>15. Governing law and disputes</h2>
+            <p>These Terms are governed by the laws of <strong>[governing jurisdiction]</strong>, without regard to conflict-of-law rules. Subject to any mandatory rights you have as a consumer, the courts of <strong>[venue]</strong> will have exclusive jurisdiction over any dispute arising out of or relating to these Terms or the Service.</p>
+            <p>Before starting formal proceedings, you agree to contact us at <strong>dev.chainseer@gmail.com</strong> and allow a reasonable opportunity to resolve the issue informally.</p>
+          </section>
+
+          <section id="changes">
+            <h2>16. Changes to these Terms</h2>
+            <p>We may update these Terms from time to time. The “Last updated” date at the top of this page reflects the latest version. Material changes will be announced on the Site or in the Telegram group where reasonably practicable. Continued use of the Site or Service after an update means you accept the revised Terms.</p>
+            <p>If any provision is found unenforceable, it will be limited to the minimum extent necessary and the remaining provisions will stay in effect. Our failure to enforce a provision is not a waiver. These Terms, together with the Privacy Policy and Risk Disclosure, are the entire agreement between you and us regarding the Site and Service.</p>
+          </section>
+
+          <section id="contact">
+            <h2>17. Contact</h2>
+            <div class="legal-card callout">
+              <p><strong>Operator:</strong> voidstudiodesk<br>
+              <strong>Email:</strong> <a href="mailto:dev.chainseer@gmail.com">dev.chainseer@gmail.com</a><br>
+              <strong>Telegram:</strong> <a data-telegram href="https://t.me/chainseer" target="_blank" rel="noopener">Chainseer alerts group</a></p>
+            </div>
+            <p>Please include “Legal” in the subject line of any formal notice so it can be routed correctly.</p>
+            <p class="back"><a href="index.html">Back to Chainseer</a></p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-bottom">
+        <p>© <span id="year">2026</span> Chainseer. Not financial advice.</p>
+        <p><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="risk.html">Risk</a> · <a data-telegram href="https://t.me/chainseer" target="_blank" rel="noopener">Telegram</a></p>
+      </div>
+    </footer>
+  </div>
+
+  <nav id="menu" class="menu" aria-label="Menu">
+    <a href="index.html">Home</a>
+    <a href="index.html#how">The screen</a>
+    <a href="index.html#alerts">Alerts</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="risk.html">Risk</a>
+    <div class="menu-legal">
+      <span>read-only</span>
+      <span>no wallet</span>
+      <span>not financial advice</span>
     </div>
-  </footer>
+  </nav>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="script.js" defer></script>
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/vendor/SplitText.min.js"></script>
+  <script src="assets/vendor/lenis.min.js"></script>
+  <script src="main.js" defer></script>
 </body>
 </html>

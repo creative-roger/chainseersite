@@ -4,253 +4,296 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — Chainseer</title>
-  <meta name="description" content="How Chainseer handles data on the website and in the Telegram alert service.">
-  <meta name="theme-color" content="#070b14">
+  <meta name="description" content="What data Chainseer processes, why, and the choices you have. A static site with no advertising trackers and a no-tracking stance.">
+  <meta name="theme-color" content="#f4f5f2">
   <link rel="canonical" href="https://chainseer.example/privacy.html">
   <meta name="robots" content="index,follow">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b1120'/%3E%3Cpath d='M16 4 27 10v12L16 28 5 22V10z' fill='none' stroke='%237c8cff' stroke-width='1.6'/%3E%3Cpath d='M9 16s3-4.5 7-4.5 7 4.5 7 4.5-3 4.5-7 4.5S9 16 9 16Z' fill='none' stroke='%2322d3ee' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='2.2' fill='%23a855f7'/%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chainseer">
+  <meta property="og:title" content="Privacy Policy — Chainseer">
+  <meta property="og:description" content="What data Chainseer processes, why, and the choices you have. A static site with no advertising trackers.">
+  <meta property="og:url" content="https://chainseer.example/privacy.html">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://chainseer.example/assets/og.png">
+  <meta property="og:image:alt" content="Chainseer headline poster: Almost nothing gets through.">
+  <meta name="twitter:image" content="https://chainseer.example/assets/og.png">
+  <meta name="twitter:title" content="Privacy Policy — Chainseer">
+  <meta name="twitter:description" content="What data Chainseer processes, why, and the choices you have. A static site with no advertising trackers.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23131712'/%3E%3Cpath d='M6 13.5h20' stroke='%23f4f5f2' stroke-opacity='.5' stroke-width='1.6'/%3E%3Cpath d='m10 21 4 4 9-10' fill='none' stroke='%233fbf88' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/switzer-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/switzer-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/switzer-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/fonts.css">
   <link rel="stylesheet" href="styles.css">
+  <script>
+    document.documentElement.classList.add("js");
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("motion");
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="bg-aura" aria-hidden="true"><span class="aura aura-1"></span><span class="aura aura-2"></span></div>
+  <div id="curtain" aria-hidden="true"><div class="curtain__panel"></div><div class="curtain__gate"></div></div>
 
-  <header class="site-header" id="top">
-    <div class="wrap header-inner">
-      <a class="brand" href="index.html" aria-label="Chainseer home">
-        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-          <path d="M16 3.2 27 9.3v12.2L16 28.8 5 22.6V9.3z" fill="none" stroke="#7c8cff" stroke-width="1.6" stroke-linejoin="round"/>
-          <path d="M9 16s3-4.6 7-4.6 7 4.6 7 4.6-3 4.6-7 4.6S9 16 9 16Z" fill="none" stroke="#22d3ee" stroke-width="1.6"/>
-          <circle cx="16" cy="16" r="2.2" fill="#a855f7"/>
-        </svg>
-        <span class="brand-text">Chainseer</span>
-      </a>
-      <div class="header-actions">
-        <a class="btn btn-ghost btn-sm" href="index.html">Back to site</a>
-        <a class="btn btn-primary btn-sm" data-telegram href="https://t.me/chainseer" target="_blank" rel="noopener">Telegram alerts</a>
-      </div>
-    </div>
-  </header>
-
-  <main id="main">
-    <div class="wrap legal-hero">
-      <p class="eyebrow">Legal</p>
-      <h1>Privacy Policy</h1>
-      <p class="lede">This policy explains what data Chainseer processes, why, and the choices you have. It covers both this static website and the alert bot on Telegram.</p>
-      <p class="legal-meta">
-        <span><strong>Last updated:</strong> 20 October 2026</span>
-        <span><strong>Effective:</strong> 20 October 2026</span>
-        <span><strong>Version:</strong> 1.0</span>
-      </p>
-    </div>
-
-    <div class="wrap legal-layout">
-      <aside class="legal-toc" aria-label="On this page">
-        <h2>On this page</h2>
-        <nav>
-          <a href="#who">1. Who we are</a>
-          <a href="#scope">2. Scope</a>
-          <a href="#collect">3. Data we collect</a>
-          <a href="#not-collect">4. Data we do not collect</a>
-          <a href="#cookies">5. Cookies and local storage</a>
-          <a href="#use">6. How we use data</a>
-          <a href="#bases">7. Legal bases</a>
-          <a href="#share">8. Sharing</a>
-          <a href="#retention">9. Retention</a>
-          <a href="#security">10. Security</a>
-          <a href="#transfers">11. International transfers</a>
-          <a href="#rights">12. Your rights</a>
-          <a href="#children">13. Children</a>
-          <a href="#third-party">14. Third-party platforms</a>
-          <a href="#changes">15. Changes</a>
-          <a href="#contact">16. Contact</a>
-        </nav>
-      </aside>
-
-      <article class="legal-body">
-        <div class="legal-card callout">
-          <p><strong>Short version.</strong> This is a static website with no advertising trackers. If you interact with the Telegram bot, Telegram and the bot process your Telegram identifiers and the messages you send. We do not ask for wallets, private keys, identity documents, or payment details, and we do not sell personal data.</p>
+  <div id="page">
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html" aria-label="Chainseer home">
+          <svg class="brand-mark" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+            <rect x="1" y="1" width="26" height="26" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M6 11.5h16" stroke="currentColor" stroke-opacity="0.45" stroke-width="1.4"/>
+            <path d="m9.5 19.5 3.5 3.5 8-9" fill="none" stroke="#0e7b4f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Chainseer
+        </a>
+        <div class="header-cta">
+          <a class="plate plate-sm plate-ghost" href="index.html">Back to site</a>
+          <a class="plate plate-sm" data-telegram href="https://t.me/chainseer" target="_blank" rel="noopener">Telegram alerts</a>
         </div>
+        <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
 
-        <section id="who">
-          <h2>1. Who we are</h2>
-          <p>Chainseer is an independent project operated by <strong>Rogers</strong> (“Chainseer”, “we”, “us”, “our”). For the purposes of the EU/UK General Data Protection Regulation, we act as the controller for the personal data described in this policy.</p>
-          <p>You can reach us at <a href="mailto:dev.chainseer@gmail.com">dev.chainseer@gmail.com</a> for any privacy question or request.</p>
-        </section>
+    <main id="main" tabindex="-1">
+      <div class="wrap legal-hero">
+        <p class="gate-mark">Legal</p>
+        <h1 class="display">Privacy Policy</h1>
+        <p class="lede">This policy explains what data Chainseer processes, why, and the choices you have. It covers both this static website and the alert bot on Telegram.</p>
+        <p class="legal-meta">
+          <span><strong>Last updated:</strong> 20 October 2026</span>
+          <span><strong>Effective:</strong> 20 October 2026</span>
+          <span><strong>Version:</strong> 1.0</span>
+        </p>
+      </div>
 
-        <section id="scope">
-          <h2>2. Scope of this policy</h2>
-          <p>This policy applies to:</p>
-          <ul>
-            <li>the Chainseer website, a static site served from our hosting provider;</li>
-            <li>the Chainseer bot and alert group on Telegram;</li>
-            <li>any direct support or legal correspondence you send us.</li>
-          </ul>
-          <p>It does not apply to Telegram itself, third-party data providers, Solana wallets or explorers, trading platforms, or any other third-party service you reach through a link. Those services have their own privacy policies.</p>
-        </section>
+      <div class="wrap legal-layout">
+        <aside class="legal-toc" aria-label="On this page">
+          <h2>On this page</h2>
+          <nav>
+            <a href="#who">1. Who we are</a>
+            <a href="#scope">2. Scope</a>
+            <a href="#collect">3. Data we collect</a>
+            <a href="#not-collect">4. Data we do not collect</a>
+            <a href="#cookies">5. Cookies and local storage</a>
+            <a href="#use">6. How we use data</a>
+            <a href="#bases">7. Legal bases</a>
+            <a href="#share">8. Sharing</a>
+            <a href="#retention">9. Retention</a>
+            <a href="#security">10. Security</a>
+            <a href="#transfers">11. International transfers</a>
+            <a href="#rights">12. Your rights</a>
+            <a href="#children">13. Children</a>
+            <a href="#third-party">14. Third-party platforms</a>
+            <a href="#changes">15. Changes</a>
+            <a href="#contact">16. Contact</a>
+          </nav>
+        </aside>
 
-        <section id="collect">
-          <h2>3. Data we collect</h2>
-          <h3>3.1 When you visit the website</h3>
-          <p>The Site is a set of static HTML, CSS, and JavaScript files. It does not require an account and does not include advertising or analytics scripts. Our hosting provider may automatically record standard server-log data when it serves a request, such as IP address, user agent, requested URL, referrer, and timestamp. We use this only for security, debugging, and aggregate traffic analysis, and we do not use it to build profiles of individual visitors.</p>
-
-          <h3>3.2 When you interact with the Telegram bot</h3>
-          <p>If you start the bot, send it a command, or message the group where the bot posts, we may process:</p>
-          <ul>
-            <li>your Telegram user ID, username, and display name;</li>
-            <li>the content of messages you send to the bot or group, including commands and any text you choose to include;</li>
-            <li>timestamps and basic delivery metadata needed to operate the bot;</li>
-            <li>technical error logs that may include the above when something fails.</li>
-          </ul>
-          <p>We do not need your phone number, email address, or contact list, and we do not request them. Telegram may make some profile data available to bots depending on your Telegram privacy settings; you control those settings in Telegram.</p>
-
-          <h3>3.3 When you contact us</h3>
-          <p>If you email us or send a direct message, we process your contact details and the content of your message so we can respond, keep a record of the request, and handle any legal or security issue.</p>
-        </section>
-
-        <section id="not-collect">
-          <h2>4. Data we do not collect</h2>
-          <p>Chainseer does not:</p>
-          <ul>
-            <li>connect to your wallet or request seed phrases, private keys, or signing approvals;</li>
-            <li>collect identity documents, proof of address, or other KYC data;</li>
-            <li>process card, bank, or payment details on this Site;</li>
-            <li>sell, rent, or trade personal data;</li>
-            <li>use your data for behavioural advertising or cross-site tracking;</li>
-            <li>execute trades or hold funds on your behalf.</li>
-          </ul>
-          <p>If you voluntarily send us sensitive information we did not ask for, we will handle it only as necessary to respond and then delete it unless we must retain it by law.</p>
-        </section>
-
-        <section id="cookies">
-          <h2>5. Cookies and local storage</h2>
-          <p>This Site does not set advertising or analytics cookies, and it does not use <code>localStorage</code> or <code>sessionStorage</code> to track you. Fonts, icons, and scripts are served from the same origin, so loading a page does not contact third-party font or analytics networks.</p>
-          <p>Your hosting provider or CDN may use strictly necessary cookies for security or load balancing. If we later add optional analytics, we will update this policy and, where required, ask for consent before non-essential cookies are set.</p>
-          <p>Telegram may set its own cookies and identifiers inside its apps and website. That is governed by Telegram’s privacy policy, not this one.</p>
-        </section>
-
-        <section id="use">
-          <h2>6. How we use data</h2>
-          <p>We process the data described above to:</p>
-          <ul>
-            <li>operate the bot, deliver alerts, and respond to commands;</li>
-            <li>moderate the Telegram group and prevent spam, abuse, and impersonation;</li>
-            <li>maintain security, diagnose errors, and protect the Service from attacks;</li>
-            <li>understand aggregate usage so we can improve the Site and Service;</li>
-            <li>comply with legal obligations and enforce our <a href="terms.html">Terms of Service</a>;</li>
-            <li>respond to enquiries, complaints, and rights requests.</li>
-          </ul>
-          <p>We do not use your data to make automated decisions that produce legal or similarly significant effects about you. Alert scoring applies to tokens and wallets, not to people.</p>
-        </section>
-
-        <section id="bases">
-          <h2>7. Legal bases (EEA and UK)</h2>
-          <p>Where GDPR applies, we rely on the following legal bases:</p>
-          <table>
-            <thead>
-              <tr><th>Purpose</th><th>Legal basis</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Delivering alerts and responding to bot commands</td><td>Performance of a contract or steps taken at your request</td></tr>
-              <tr><td>Security, abuse prevention, debugging, group moderation</td><td>Our legitimate interests in operating a safe service</td></tr>
-              <tr><td>Aggregate traffic analysis and product improvement</td><td>Our legitimate interests, using minimised data</td></tr>
-              <tr><td>Optional communications or features that require consent</td><td>Your consent, which you can withdraw at any time</td></tr>
-              <tr><td>Tax, accounting, and lawful requests</td><td>Compliance with a legal obligation</td></tr>
-            </tbody>
-          </table>
-          <p>Where we rely on legitimate interests, we balance them against your rights and expect that the processing is proportionate and limited to what the Service needs.</p>
-        </section>
-
-        <section id="share">
-          <h2>8. Sharing and disclosure</h2>
-          <p>We share personal data only where necessary:</p>
-          <ul>
-            <li><strong>Telegram</strong> — messages and account identifiers are transmitted through Telegram’s platform so alerts and bot replies can be delivered.</li>
-            <li><strong>Hosting and infrastructure providers</strong> — process server logs and run the infrastructure on our behalf under confidentiality and data-protection terms.</li>
-            <li><strong>Market data providers and public blockchain sources</strong> — we query public market data. We do not send your personal data to these providers as part of normal operation.</li>
-            <li><strong>Professional advisers</strong> — lawyers, accountants, or auditors where necessary and bound by confidentiality.</li>
-            <li><strong>Authorities</strong> — when required by law, a valid legal request, or to protect the rights, safety, and security of users or the public.</li>
-            <li><strong>Successors</strong> — in connection with a merger, acquisition, or transfer of the project, subject to equivalent protection of your data.</li>
-          </ul>
-          <p>We do not sell personal data. We do not share your data with advertisers.</p>
-        </section>
-
-        <section id="retention">
-          <h2>9. Retention</h2>
-          <p>We keep personal data only as long as needed for the purposes described above:</p>
-          <ul>
-            <li>bot interaction logs and support messages are typically retained for up to 12 months, then deleted or anonymised;</li>
-            <li>server and security logs are typically retained for up to 30 days, unless needed to investigate an incident;</li>
-            <li>records required for legal, tax, or dispute purposes may be kept for the period required by law;</li>
-            <li>aggregate statistics that cannot identify you may be kept indefinitely.</li>
-          </ul>
-          <p>When data is no longer needed, we delete it or irreversibly anonymise it. If you ask us to delete your data, we will do so subject to any legal retention obligation.</p>
-        </section>
-
-        <section id="security">
-          <h2>10. Security</h2>
-          <p>We use reasonable technical and organisational measures to protect data, including access controls, least-privilege configuration, encrypted transport where supported, and keeping secrets such as bot tokens and API keys out of the public Site.</p>
-          <p>No method of transmission or storage is completely secure. We cannot guarantee absolute security, and you share information with the bot at your own risk. If we become aware of a breach that is likely to affect your rights, we will notify affected users and relevant authorities where the law requires it.</p>
-          <p>Never send seed phrases, private keys, or wallet credentials to the bot or to anyone in the group. Chainseer will never ask for them.</p>
-        </section>
-
-        <section id="transfers">
-          <h2>11. International transfers</h2>
-          <p>Chainseer and its providers may process data in countries other than your own, including the United States, where privacy laws may differ. Where we transfer personal data from the EEA or UK, we rely on appropriate safeguards such as Standard Contractual Clauses, an adequacy decision, or another lawful transfer mechanism, and we take steps to protect the data in transit and at rest.</p>
-        </section>
-
-        <section id="rights">
-          <h2>12. Your rights</h2>
-          <p>Depending on where you live, you may have the right to:</p>
-          <ul>
-            <li>access the personal data we hold about you;</li>
-            <li>correct inaccurate or incomplete data;</li>
-            <li>request deletion of your data;</li>
-            <li>restrict or object to certain processing;</li>
-            <li>receive your data in a portable format;</li>
-            <li>withdraw consent where processing is based on consent;</li>
-            <li>lodge a complaint with your local data-protection authority.</li>
-          </ul>
-          <p>To exercise a right, email <a href="mailto:dev.chainseer@gmail.com">dev.chainseer@gmail.com</a> with enough detail for us to identify you and your request. We may ask for verification to avoid disclosing data to the wrong person. We aim to respond within one month, and will tell you if we need more time.</p>
-          <p>You also have the right to complain to a supervisory authority in your country of residence, place of work, or where an alleged infringement occurred. We would appreciate the chance to address your concern first.</p>
-        </section>
-
-        <section id="children">
-          <h2>13. Children</h2>
-          <p>The Site and Service are intended for adults. They are not directed to anyone under 18, and we do not knowingly collect personal data from children. If you believe a child has provided us with personal data, contact us and we will delete it.</p>
-        </section>
-
-        <section id="third-party">
-          <h2>14. Third-party platforms and links</h2>
-          <p>Alerts and pages may link to charting sites, Solana explorers, trading interfaces, or other sites. Once you leave Chainseer, the destination’s privacy policy applies. We are not responsible for the content, security, or data practices of third parties, and a link is not an endorsement.</p>
-          <p>If you use Telegram, your account data and message metadata are handled by Telegram under its own terms. Adjust your Telegram privacy settings if you do not want your profile visible to bots or group members.</p>
-        </section>
-
-        <section id="changes">
-          <h2>15. Changes to this policy</h2>
-          <p>We may update this policy to reflect changes to the Service, our providers, or the law. The “Last updated” date at the top shows the current version. If a change materially affects how we use personal data, we will provide reasonable notice on the Site or in the Telegram group before it takes effect.</p>
-        </section>
-
-        <section id="contact">
-          <h2>16. Contact</h2>
+        <article class="legal-body">
           <div class="legal-card callout">
-            <p><strong>Privacy contact:</strong> <a href="mailto:dev.chainseer@gmail.com">dev.chainseer@gmail.com</a><br>
-            <strong>Operator:</strong>Rogers<br>
+            <p><strong>Short version.</strong> This is a static website with no advertising trackers. If you interact with the Telegram bot, Telegram and the bot process your Telegram identifiers and the messages you send. We do not ask for wallets, private keys, identity documents, or payment details, and we do not sell personal data.</p>
           </div>
-          <p class="back"><a href="index.html">← Back to Chainseer</a></p>
-        </section>
-      </article>
-    </div>
-  </main>
 
-  <footer class="site-footer">
-    <div class="wrap footer-bottom">
-      <p>© <span id="year">2026</span> Chainseer. Not financial advice.</p>
-      <p><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="risk.html">Risk</a> · <a data-telegram href="https://t.me/chainseer" target="_blank" rel="noopener">Telegram</a></p>
+          <section id="who">
+            <h2>1. Who we are</h2>
+            <p>Chainseer is an independent project operated by <strong>voidstudiodesk</strong> (“Chainseer”, “we”, “us”, “our”). For the purposes of the EU/UK General Data Protection Regulation, we act as the controller for the personal data described in this policy.</p>
+            <p>You can reach us at <a href="mailto:dev.chainseer@gmail.com">dev.chainseer@gmail.com</a> for any privacy question or request.</p>
+          </section>
+
+          <section id="scope">
+            <h2>2. Scope of this policy</h2>
+            <p>This policy applies to:</p>
+            <ul>
+              <li>the Chainseer website, a static site served from our hosting provider;</li>
+              <li>the Chainseer bot and alert group on Telegram;</li>
+              <li>any direct support or legal correspondence you send us.</li>
+            </ul>
+            <p>It does not apply to Telegram itself, third-party data providers, Solana wallets or explorers, trading platforms, or any other third-party service you reach through a link. Those services have their own privacy policies.</p>
+          </section>
+
+          <section id="collect">
+            <h2>3. Data we collect</h2>
+            <h3>3.1 When you visit the website</h3>
+            <p>The Site is a set of static HTML, CSS, and JavaScript files. It does not require an account and does not include advertising or analytics scripts. Our hosting provider may automatically record standard server-log data when it serves a request, such as IP address, user agent, requested URL, referrer, and timestamp. We use this only for security, debugging, and aggregate traffic analysis, and we do not use it to build profiles of individual visitors.</p>
+
+            <h3>3.2 When you interact with the Telegram bot</h3>
+            <p>If you start the bot, send it a command, or message the group where the bot posts, we may process:</p>
+            <ul>
+              <li>your Telegram user ID, username, and display name;</li>
+              <li>the content of messages you send to the bot or group, including commands and any text you choose to include;</li>
+              <li>timestamps and basic delivery metadata needed to operate the bot;</li>
+              <li>technical error logs that may include the above when something fails.</li>
+            </ul>
+            <p>We do not need your phone number, email address, or contact list, and we do not request them. Telegram may make some profile data available to bots depending on your Telegram privacy settings; you control those settings in Telegram.</p>
+
+            <h3>3.3 When you contact us</h3>
+            <p>If you email us or send a direct message, we process your contact details and the content of your message so we can respond, keep a record of the request, and handle any legal or security issue.</p>
+          </section>
+
+          <section id="not-collect">
+            <h2>4. Data we do not collect</h2>
+            <p>Chainseer does not:</p>
+            <ul>
+              <li>connect to your wallet or request seed phrases, private keys, or signing approvals;</li>
+              <li>collect identity documents, proof of address, or other KYC data;</li>
+              <li>process card, bank, or payment details on this Site;</li>
+              <li>sell, rent, or trade personal data;</li>
+              <li>use your data for behavioural advertising or cross-site tracking;</li>
+              <li>execute trades or hold funds on your behalf.</li>
+            </ul>
+            <p>If you voluntarily send us sensitive information we did not ask for, we will handle it only as necessary to respond and then delete it unless we must retain it by law.</p>
+          </section>
+
+          <section id="cookies">
+            <h2>5. Cookies and local storage</h2>
+            <p>This Site does not set advertising or analytics cookies, and it does not use <code>localStorage</code> or <code>sessionStorage</code> to track you. Fonts, icons, and scripts are served from the same origin, so loading a page does not contact third-party font or analytics networks.</p>
+            <p>Your hosting provider or CDN may use strictly necessary cookies for security or load balancing. If we later add optional analytics, we will update this policy and, where required, ask for consent before non-essential cookies are set.</p>
+            <p>Telegram may set its own cookies and identifiers inside its apps and website. That is governed by Telegram’s privacy policy, not this one.</p>
+          </section>
+
+          <section id="use">
+            <h2>6. How we use data</h2>
+            <p>We process the data described above to:</p>
+            <ul>
+              <li>operate the bot, deliver alerts, and respond to commands;</li>
+              <li>moderate the Telegram group and prevent spam, abuse, and impersonation;</li>
+              <li>maintain security, diagnose errors, and protect the Service from attacks;</li>
+              <li>understand aggregate usage so we can improve the Site and Service;</li>
+              <li>comply with legal obligations and enforce our <a href="terms.html">Terms of Service</a>;</li>
+              <li>respond to enquiries, complaints, and rights requests.</li>
+            </ul>
+            <p>We do not use your data to make automated decisions that produce legal or similarly significant effects about you. Alert scoring applies to tokens and wallets, not to people.</p>
+          </section>
+
+          <section id="bases">
+            <h2>7. Legal bases (EEA and UK)</h2>
+            <p>Where GDPR applies, we rely on the following legal bases:</p>
+            <table>
+              <thead>
+                <tr><th>Purpose</th><th>Legal basis</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Delivering alerts and responding to bot commands</td><td>Performance of a contract or steps taken at your request</td></tr>
+                <tr><td>Security, abuse prevention, debugging, group moderation</td><td>Our legitimate interests in operating a safe service</td></tr>
+                <tr><td>Aggregate traffic analysis and product improvement</td><td>Our legitimate interests, using minimised data</td></tr>
+                <tr><td>Optional communications or features that require consent</td><td>Your consent, which you can withdraw at any time</td></tr>
+                <tr><td>Tax, accounting, and lawful requests</td><td>Compliance with a legal obligation</td></tr>
+              </tbody>
+            </table>
+            <p>Where we rely on legitimate interests, we balance them against your rights and expect that the processing is proportionate and limited to what the Service needs.</p>
+          </section>
+
+          <section id="share">
+            <h2>8. Sharing and disclosure</h2>
+            <p>We share personal data only where necessary:</p>
+            <ul>
+              <li><strong>Telegram</strong> — messages and account identifiers are transmitted through Telegram’s platform so alerts and bot replies can be delivered.</li>
+              <li><strong>Hosting and infrastructure providers</strong> — process server logs and run the infrastructure on our behalf under confidentiality and data-protection terms.</li>
+              <li><strong>Market data providers and public blockchain sources</strong> — we query public market data. We do not send your personal data to these providers as part of normal operation.</li>
+              <li><strong>Professional advisers</strong> — lawyers, accountants, or auditors where necessary and bound by confidentiality.</li>
+              <li><strong>Authorities</strong> — when required by law, a valid legal request, or to protect the rights, safety, and security of users or the public.</li>
+              <li><strong>Successors</strong> — in connection with a merger, acquisition, or transfer of the project, subject to equivalent protection of your data.</li>
+            </ul>
+            <p>We do not sell personal data. We do not share your data with advertisers.</p>
+          </section>
+
+          <section id="retention">
+            <h2>9. Retention</h2>
+            <p>We keep personal data only as long as needed for the purposes described above:</p>
+            <ul>
+              <li>bot interaction logs and support messages are typically retained for up to 12 months, then deleted or anonymised;</li>
+              <li>server and security logs are typically retained for up to 30 days, unless needed to investigate an incident;</li>
+              <li>records required for legal, tax, or dispute purposes may be kept for the period required by law;</li>
+              <li>aggregate statistics that cannot identify you may be kept indefinitely.</li>
+            </ul>
+            <p>When data is no longer needed, we delete it or irreversibly anonymise it. If you ask us to delete your data, we will do so subject to any legal retention obligation.</p>
+          </section>
+
+          <section id="security">
+            <h2>10. Security</h2>
+            <p>We use reasonable technical and organisational measures to protect data, including access controls, least-privilege configuration, encrypted transport where supported, and keeping secrets such as bot tokens and API keys out of the public Site.</p>
+            <p>No method of transmission or storage is completely secure. We cannot guarantee absolute security, and you share information with the bot at your own risk. If we become aware of a breach that is likely to affect your rights, we will notify affected users and relevant authorities where the law requires it.</p>
+            <p>Never send seed phrases, private keys, or wallet credentials to the bot or to anyone in the group. Chainseer will never ask for them.</p>
+          </section>
+
+          <section id="transfers">
+            <h2>11. International transfers</h2>
+            <p>Chainseer and its providers may process data in countries other than your own, including the United States, where privacy laws may differ. Where we transfer personal data from the EEA or UK, we rely on appropriate safeguards such as Standard Contractual Clauses, an adequacy decision, or another lawful transfer mechanism, and we take steps to protect the data in transit and at rest.</p>
+          </section>
+
+          <section id="rights">
+            <h2>12. Your rights</h2>
+            <p>Depending on where you live, you may have the right to:</p>
+            <ul>
+              <li>access the personal data we hold about you;</li>
+              <li>correct inaccurate or incomplete data;</li>
+              <li>request deletion of your data;</li>
+              <li>restrict or object to certain processing;</li>
+              <li>receive your data in a portable format;</li>
+              <li>withdraw consent where processing is based on consent;</li>
+              <li>lodge a complaint with your local data-protection authority.</li>
+            </ul>
+            <p>To exercise a right, email <a href="mailto:dev.chainseer@gmail.com">dev.chainseer@gmail.com</a> with enough detail for us to identify you and your request. We may ask for verification to avoid disclosing data to the wrong person. We aim to respond within one month, and will tell you if we need more time.</p>
+            <p>You also have the right to complain to a supervisory authority in your country of residence, place of work, or where an alleged infringement occurred. We would appreciate the chance to address your concern first.</p>
+          </section>
+
+          <section id="children">
+            <h2>13. Children</h2>
+            <p>The Site and Service are intended for adults. They are not directed to anyone under 18, and we do not knowingly collect personal data from children. If you believe a child has provided us with personal data, contact us and we will delete it.</p>
+          </section>
+
+          <section id="third-party">
+            <h2>14. Third-party platforms and links</h2>
+            <p>Alerts and pages may link to charting sites, Solana explorers, trading interfaces, or other sites. Once you leave Chainseer, the destination’s privacy policy applies. We are not responsible for the content, security, or data practices of third parties, and a link is not an endorsement.</p>
+            <p>If you use Telegram, your account data and message metadata are handled by Telegram under its own terms. Adjust your Telegram privacy settings if you do not want your profile visible to bots or group members.</p>
+          </section>
+
+          <section id="changes">
+            <h2>15. Changes to this policy</h2>
+            <p>We may update this policy to reflect changes to the Service, our providers, or the law. The “Last updated” date at the top shows the current version. If a change materially affects how we use personal data, we will provide reasonable notice on the Site or in the Telegram group before it takes effect.</p>
+          </section>
+
+          <section id="contact">
+            <h2>16. Contact</h2>
+            <div class="legal-card callout">
+              <p><strong>Privacy contact:</strong> <a href="mailto:dev.chainseer@gmail.com">dev.chainseer@gmail.com</a><br>
+              <strong>Operator:</strong> voidstudiodesk</p>
+            </div>
+            <p class="back"><a href="index.html">Back to Chainseer</a></p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-bottom">
+        <p>© <span id="year">2026</span> Chainseer. Not financial advice.</p>
+        <p><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="risk.html">Risk</a> · <a data-telegram href="https://t.me/chainseer" target="_blank" rel="noopener">Telegram</a></p>
+      </div>
+    </footer>
+  </div>
+
+  <nav id="menu" class="menu" aria-label="Menu">
+    <a href="index.html">Home</a>
+    <a href="index.html#how">The screen</a>
+    <a href="index.html#alerts">Alerts</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="risk.html">Risk</a>
+    <div class="menu-legal">
+      <span>read-only</span>
+      <span>no wallet</span>
+      <span>not financial advice</span>
     </div>
-  </footer>
+  </nav>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="script.js" defer></script>
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/vendor/SplitText.min.js"></script>
+  <script src="assets/vendor/lenis.min.js"></script>
+  <script src="main.js" defer></script>
 </body>
 </html>

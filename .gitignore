@@ -1,0 +1,6 @@
+# QA tooling artifacts (crawl evidence, audit reports)
+.jury/
+
+# OS cruft
+Thumbs.db
+Desktop.ini

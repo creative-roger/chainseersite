@@ -5,145 +5,188 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Risk Disclosure — Chainseer</title>
   <meta name="description" content="The risks of trading memecoins and relying on automated rug-filtering alerts.">
-  <meta name="theme-color" content="#070b14">
+  <meta name="theme-color" content="#f4f5f2">
   <link rel="canonical" href="https://chainseer.example/risk.html">
   <meta name="robots" content="index,follow">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b1120'/%3E%3Cpath d='M16 4 27 10v12L16 28 5 22V10z' fill='none' stroke='%237c8cff' stroke-width='1.6'/%3E%3Cpath d='M9 16s3-4.5 7-4.5 7 4.5 7 4.5-3 4.5-7 4.5S9 16 9 16Z' fill='none' stroke='%2322d3ee' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='2.2' fill='%23a855f7'/%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chainseer">
+  <meta property="og:title" content="Risk Disclosure — Chainseer">
+  <meta property="og:description" content="The risks of trading memecoins and relying on automated rug-filtering alerts.">
+  <meta property="og:url" content="https://chainseer.example/risk.html">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://chainseer.example/assets/og.png">
+  <meta property="og:image:alt" content="Chainseer headline poster: Almost nothing gets through.">
+  <meta name="twitter:image" content="https://chainseer.example/assets/og.png">
+  <meta name="twitter:title" content="Risk Disclosure — Chainseer">
+  <meta name="twitter:description" content="The risks of trading memecoins and relying on automated rug-filtering alerts.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23131712'/%3E%3Cpath d='M6 13.5h20' stroke='%23f4f5f2' stroke-opacity='.5' stroke-width='1.6'/%3E%3Cpath d='m10 21 4 4 9-10' fill='none' stroke='%233fbf88' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/switzer-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/switzer-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/switzer-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/fonts.css">
   <link rel="stylesheet" href="styles.css">
+  <script>
+    document.documentElement.classList.add("js");
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("motion");
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="bg-aura" aria-hidden="true"><span class="aura aura-1"></span><span class="aura aura-2"></span></div>
+  <div id="curtain" aria-hidden="true"><div class="curtain__panel"></div><div class="curtain__gate"></div></div>
 
-  <header class="site-header" id="top">
-    <div class="wrap header-inner">
-      <a class="brand" href="index.html" aria-label="Chainseer home">
-        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-          <path d="M16 3.2 27 9.3v12.2L16 28.8 5 22.6V9.3z" fill="none" stroke="#7c8cff" stroke-width="1.6" stroke-linejoin="round"/>
-          <path d="M9 16s3-4.6 7-4.6 7 4.6 7 4.6-3 4.6-7 4.6S9 16 9 16Z" fill="none" stroke="#22d3ee" stroke-width="1.6"/>
-          <circle cx="16" cy="16" r="2.2" fill="#a855f7"/>
-        </svg>
-        <span class="brand-text">Chainseer</span>
-      </a>
-      <div class="header-actions">
-        <a class="btn btn-ghost btn-sm" href="index.html">Back to site</a>
-        <a class="btn btn-primary btn-sm" data-telegram href="https://t.me/chainseer" target="_blank" rel="noopener">Telegram alerts</a>
-      </div>
-    </div>
-  </header>
-
-  <main id="main">
-    <div class="wrap legal-hero">
-      <p class="eyebrow">Legal</p>
-      <h1>Risk Disclosure</h1>
-      <p class="lede">Memecoin trading is high risk. Automated alerts do not change that. Read this before acting on any Chainseer signal.</p>
-      <p class="legal-meta">
-        <span><strong>Last updated:</strong> 20 October 2026</span>
-        <span><strong>Effective:</strong> 20 October 2026</span>
-      </p>
-    </div>
-
-    <div class="wrap legal-layout">
-      <aside class="legal-toc" aria-label="On this page">
-        <h2>On this page</h2>
-        <nav>
-          <a href="#general">1. General risk</a>
-          <a href="#filtering">2. Limits of rug filtering</a>
-          <a href="#screening">3. Screening limits</a>
-          <a href="#data">4. Data and latency</a>
-          <a href="#contract">5. Smart-contract risk</a>
-          <a href="#market">6. Market and liquidity risk</a>
-          <a href="#automation">7. Automation and delivery risk</a>
-          <a href="#regulatory">8. Regulatory risk</a>
-          <a href="#no-advice">9. No advice or fiduciary duty</a>
-          <a href="#acknowledgement">10. Acknowledgement</a>
-        </nav>
-      </aside>
-
-      <article class="legal-body">
-        <div class="legal-card warn">
-          <p><strong>You can lose everything.</strong> Tokens discussed in alerts can go to zero within seconds. Never trade with money you cannot afford to lose, and never treat an alert as a guarantee or a command.</p>
+  <div id="page">
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html" aria-label="Chainseer home">
+          <svg class="brand-mark" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+            <rect x="1" y="1" width="26" height="26" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M6 11.5h16" stroke="currentColor" stroke-opacity="0.45" stroke-width="1.4"/>
+            <path d="m9.5 19.5 3.5 3.5 8-9" fill="none" stroke="#0e7b4f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Chainseer
+        </a>
+        <div class="header-cta">
+          <a class="plate plate-sm plate-ghost" href="index.html">Back to site</a>
+          <a class="plate plate-sm" data-telegram href="https://t.me/chainseer" target="_blank" rel="noopener">Telegram alerts</a>
         </div>
+        <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
 
-        <section id="general">
-          <h2>1. General risk</h2>
-          <p>Digital assets, and memecoins in particular, are speculative and extremely volatile. Prices can move dramatically in either direction, liquidity can disappear, and a position can become impossible to exit at any price. There is no deposit insurance, no central bank backstop, and no guaranteed market for any token.</p>
-          <p>You are solely responsible for your trading decisions, position sizing, tax obligations, and compliance with the laws that apply to you.</p>
-        </section>
+    <main id="main" tabindex="-1">
+      <div class="wrap legal-hero">
+        <p class="gate-mark">Legal</p>
+        <h1 class="display">Risk Disclosure</h1>
+        <p class="lede">Memecoin trading is high risk. Automated alerts do not change that. Read this before acting on any Chainseer signal.</p>
+        <p class="legal-meta">
+          <span><strong>Last updated:</strong> 20 October 2026</span>
+          <span><strong>Effective:</strong> 20 October 2026</span>
+        </p>
+      </div>
 
-        <section id="filtering">
-          <h2>2. Limits of rug filtering</h2>
-          <p>Chainseer is built to filter out almost all rugs, but “almost all” is not “all”. No filter can guarantee that a token is safe. A coin that passes every check can still lose most or all of its value. Bad actors adapt, and they can:</p>
-          <ul>
-            <li>spread supply across many fresh wallets to defeat holder-concentration checks;</li>
-            <li>renounce authorities at launch and still drain liquidity or dump a hidden supply later;</li>
-            <li>use a new deployer wallet with no launch history;</li>
-            <li>fake volume, holder counts, or organic activity to look healthy;</li>
-            <li>change tactics faster than any set of rules can be updated.</li>
-          </ul>
-          <p>Chainseer’s security filters reduce some of this risk; they do not eliminate it. The bot only makes the work easier by narrowing a large number of new coins down to a shorter list. It does not replace your own research or judgement.</p>
-        </section>
+      <div class="wrap legal-layout">
+        <aside class="legal-toc" aria-label="On this page">
+          <h2>On this page</h2>
+          <nav>
+            <a href="#general">1. General risk</a>
+            <a href="#filtering">2. Limits of rug filtering</a>
+            <a href="#screening">3. Screening limits</a>
+            <a href="#data">4. Data and latency</a>
+            <a href="#contract">5. Smart-contract risk</a>
+            <a href="#market">6. Market and liquidity risk</a>
+            <a href="#automation">7. Automation and delivery risk</a>
+            <a href="#regulatory">8. Regulatory risk</a>
+            <a href="#no-advice">9. No advice or fiduciary duty</a>
+            <a href="#acknowledgement">10. Acknowledgement</a>
+          </nav>
+        </aside>
 
-        <section id="screening">
-          <h2>3. Screening limits</h2>
-          <p>Screening is heuristic. It applies fixed thresholds to contract settings, holder distribution, deployer history, and market data. Thresholds can be too strict, so good coins may be skipped, or too loose, so bad coins may pass. When data is missing, the bot skips the coin rather than guessing.</p>
-          <p>A high safety score means a coin cleared more checks cleanly. It is not a prediction of price. Historical outcomes are measured after the fact and do not guarantee that the next alert behaves similarly.</p>
-        </section>
+        <article class="legal-body">
+          <div class="legal-card warn">
+            <p><strong>You can lose everything.</strong> Tokens discussed in alerts can go to zero within seconds. Never trade with money you cannot afford to lose, and never treat an alert as a guarantee or a command.</p>
+          </div>
 
-        <section id="data">
-          <h2>4. Data accuracy and latency</h2>
-          <p>Chainseer depends on third-party market data providers and public blockchain sources. That data may be delayed, rate-limited, incomplete, mislabelled, or temporarily unavailable. Alert delivery also depends on enrichment requests, network conditions, and Telegram.</p>
-          <p>By the time you see an alert, the price may already have moved substantially. Early buyers may be selling into the demand that the alert attracts. Slippage, fees, and priority costs can turn an apparent opportunity into a loss.</p>
-        </section>
+          <section id="general">
+            <h2>1. General risk</h2>
+            <p>Digital assets, and memecoins in particular, are speculative and extremely volatile. Prices can move dramatically in either direction, liquidity can disappear, and a position can become impossible to exit at any price. There is no deposit insurance, no central bank backstop, and no guaranteed market for any token.</p>
+            <p>You are solely responsible for your trading decisions, position sizing, tax obligations, and compliance with the laws that apply to you.</p>
+          </section>
 
-        <section id="contract">
-          <h2>5. Smart-contract and token risk</h2>
-          <p>Tokens can contain malicious or poorly written code. Risks include honeypots that block selling, hidden mint functions, freeze authorities, transfer taxes, blacklists, proxy upgrades, and exploitable liquidity pools. Security metrics can be wrong, stale, or bypassed by a determined developer.</p>
-          <p>Chainseer requires renounced authorities and blocks several known risk patterns by default, but no automated check can prove that a contract is safe. Always verify the contract and the liquidity yourself.</p>
-        </section>
+          <section id="filtering">
+            <h2>2. Limits of rug filtering</h2>
+            <p>Chainseer is built to filter out almost all rugs, but “almost all” is not “all”. No filter can guarantee that a token is safe. A coin that passes every check can still lose most or all of its value. Bad actors adapt, and they can:</p>
+            <ul>
+              <li>spread supply across many fresh wallets to defeat holder-concentration checks;</li>
+              <li>renounce authorities at launch and still drain liquidity or dump a hidden supply later;</li>
+              <li>use a new deployer wallet with no launch history;</li>
+              <li>fake volume, holder counts, or organic activity to look healthy;</li>
+              <li>change tactics faster than any set of rules can be updated.</li>
+            </ul>
+            <p>Chainseer’s security filters reduce some of this risk; they do not eliminate it. The bot only makes the work easier by narrowing a large number of new coins down to a shorter list. It does not replace your own research or judgement.</p>
+          </section>
 
-        <section id="market">
-          <h2>6. Market, liquidity, and exit risk</h2>
-          <p>Thin liquidity means your own order can move the price against you. You may be unable to sell at the quoted price, or at all. Liquidity can be pulled by the developer or by large holders. Trading fees, priority fees, and failed transactions add cost even when the trade does not execute as intended.</p>
-          <p>Concentration risk is real: a small number of wallets can hold enough supply to collapse the price. Chainseer caps top-10 concentration by default, but that metric can change after the alert.</p>
-        </section>
+          <section id="screening">
+            <h2>3. Screening limits</h2>
+            <p>Screening is heuristic. It applies fixed thresholds to contract settings, holder distribution, deployer history, and market data. Thresholds can be too strict, so good coins may be skipped, or too loose, so bad coins may pass. When data is missing, the bot skips the coin rather than guessing.</p>
+            <p>A high safety score means a coin cleared more checks cleanly. It is not a prediction of price. Historical outcomes are measured after the fact and do not guarantee that the next alert behaves similarly.</p>
+          </section>
 
-        <section id="automation">
-          <h2>7. Automation, availability, and delivery risk</h2>
-          <p>The bot may be offline, rate-limited, misconfigured, or affected by bugs. Alerts may be delayed, duplicated, suppressed, or never delivered. The one-alert-per-token default means you will not receive updates for a token that already alerted. Sell-side alerts are disabled by default and, even when enabled, are best-effort warnings — not an exit guarantee.</p>
-          <p>Do not build a strategy that depends on receiving a message at a precise moment. Use independent risk controls, including position sizing and stop-loss discipline that you control.</p>
-        </section>
+          <section id="data">
+            <h2>4. Data accuracy and latency</h2>
+            <p>Chainseer depends on third-party market data providers and public blockchain sources. That data may be delayed, rate-limited, incomplete, mislabelled, or temporarily unavailable. Alert delivery also depends on enrichment requests, network conditions, and Telegram.</p>
+            <p>By the time you see an alert, the price may already have moved substantially. Early buyers may be selling into the demand that the alert attracts. Slippage, fees, and priority costs can turn an apparent opportunity into a loss.</p>
+          </section>
 
-        <section id="regulatory">
-          <h2>8. Regulatory and tax risk</h2>
-          <p>The legal treatment of digital assets varies by jurisdiction and is changing. Access to certain tokens or platforms may be restricted or prohibited where you live. You are responsible for determining whether your use of the Service and any related trading is lawful, and for reporting and paying any taxes that apply.</p>
-          <p>Chainseer does not provide legal, tax, or regulatory advice.</p>
-        </section>
+          <section id="contract">
+            <h2>5. Smart-contract and token risk</h2>
+            <p>Tokens can contain malicious or poorly written code. Risks include honeypots that block selling, hidden mint functions, freeze authorities, transfer taxes, blacklists, proxy upgrades, and exploitable liquidity pools. Security metrics can be wrong, stale, or bypassed by a determined developer.</p>
+            <p>Chainseer requires renounced authorities and blocks several known risk patterns by default, but no automated check can prove that a contract is safe. Always verify the contract and the liquidity yourself.</p>
+          </section>
 
-        <section id="no-advice">
-          <h2>9. No advice and no fiduciary duty</h2>
-          <p>Chainseer is not your adviser, broker, agent, or fiduciary. It does not know your portfolio, objectives, or risk tolerance. No communication from Chainseer — on the Site, in Telegram, or in private messages — creates an advisory or fiduciary relationship.</p>
-          <p>Any statement about past performance, scores, or observed outcomes is informational. Past performance does not predict future results.</p>
-        </section>
+          <section id="market">
+            <h2>6. Market, liquidity, and exit risk</h2>
+            <p>Thin liquidity means your own order can move the price against you. You may be unable to sell at the quoted price, or at all. Liquidity can be pulled by the developer or by large holders. Trading fees, priority fees, and failed transactions add cost even when the trade does not execute as intended.</p>
+            <p>Concentration risk is real: a small number of wallets can hold enough supply to collapse the price. Chainseer caps top-10 concentration by default, but that metric can change after the alert.</p>
+          </section>
 
-        <section id="acknowledgement">
-          <h2>10. Acknowledgement</h2>
-          <p>By using the Site or the Service, you acknowledge that you have read this Risk Disclosure, understand the risks described, and accept full responsibility for your decisions. If you do not understand these risks, do not use the Service.</p>
-          <p>See also the <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.</p>
-          <p class="back"><a href="index.html">← Back to Chainseer</a></p>
-        </section>
-      </article>
+          <section id="automation">
+            <h2>7. Automation, availability, and delivery risk</h2>
+            <p>The bot may be offline, rate-limited, misconfigured, or affected by bugs. Alerts may be delayed, duplicated, suppressed, or never delivered. The one-alert-per-token default means you will not receive updates for a token that already alerted. Sell-side alerts are disabled by default and, even when enabled, are best-effort warnings — not an exit guarantee.</p>
+            <p>Do not build a strategy that depends on receiving a message at a precise moment. Use independent risk controls, including position sizing and stop-loss discipline that you control.</p>
+          </section>
+
+          <section id="regulatory">
+            <h2>8. Regulatory and tax risk</h2>
+            <p>The legal treatment of digital assets varies by jurisdiction and is changing. Access to certain tokens or platforms may be restricted or prohibited where you live. You are responsible for determining whether your use of the Service and any related trading is lawful, and for reporting and paying any taxes that apply.</p>
+            <p>Chainseer does not provide legal, tax, or regulatory advice.</p>
+          </section>
+
+          <section id="no-advice">
+            <h2>9. No advice and no fiduciary duty</h2>
+            <p>Chainseer is not your adviser, broker, agent, or fiduciary. It does not know your portfolio, objectives, or risk tolerance. No communication from Chainseer — on the Site, in Telegram, or in private messages — creates an advisory or fiduciary relationship.</p>
+            <p>Any statement about past performance, scores, or observed outcomes is informational. Past performance does not predict future results.</p>
+          </section>
+
+          <section id="acknowledgement">
+            <h2>10. Acknowledgement</h2>
+            <p>By using the Site or the Service, you acknowledge that you have read this Risk Disclosure, understand the risks described, and accept full responsibility for your decisions. If you do not understand these risks, do not use the Service.</p>
+            <p>See also the <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.</p>
+            <p class="back"><a href="index.html">Back to Chainseer</a></p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-bottom">
+        <p>© <span id="year">2026</span> Chainseer. Not financial advice.</p>
+        <p><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="risk.html">Risk</a> · <a data-telegram href="https://t.me/chainseer" target="_blank" rel="noopener">Telegram</a></p>
+      </div>
+    </footer>
+  </div>
+
+  <nav id="menu" class="menu" aria-label="Menu">
+    <a href="index.html">Home</a>
+    <a href="index.html#how">The screen</a>
+    <a href="index.html#alerts">Alerts</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="risk.html">Risk</a>
+    <div class="menu-legal">
+      <span>read-only</span>
+      <span>no wallet</span>
+      <span>not financial advice</span>
     </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap footer-bottom">
-      <p>© <span id="year">2026</span> Chainseer. Not financial advice.</p>
-      <p><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="risk.html">Risk</a> · <a data-telegram href="https://t.me/chainseer" target="_blank" rel="noopener">Telegram</a></p>
-    </div>
-  </footer>
+  </nav>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="script.js" defer></script>
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/vendor/SplitText.min.js"></script>
+  <script src="assets/vendor/lenis.min.js"></script>
+  <script src="main.js" defer></script>
 </body>
 </html>
